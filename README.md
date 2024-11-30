@@ -1,8 +1,4 @@
-Here’s a sample `README.md` file for your **Image Compressor** project:
-
----
-
-# Image Compressor
+# The Image Compressor
 
 A simple and efficient image compression web application that allows users to upload, preview, and compress images directly in their browser. The app ensures high-quality compression while reducing file sizes, making image handling faster and more efficient.
 
