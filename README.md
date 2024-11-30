@@ -91,7 +91,7 @@ Follow these steps to run the project locally:
 
 ### Upload and Compress
 
-![Upload and Compress](https://i.ibb.co/SvjFjTN/Screenshot-2024-11-30-121510.png)  
+![Upload and Compress](https://i.ibb.co/7yfsfcv/Screenshot-2024-11-30-121510.png)  
 
 
 ## 🙌 Contributing
