@@ -109,7 +109,9 @@ const ImageUploader = () => {
   };
 
   const { getRootProps, getInputProps } = useDropzone({
-    accept: "image/jpeg, image/png, image/gif, image/svg+xml",
+    accept: {
+      'image/*': ['.jpeg', '.jpg', '.png', '.webp'],
+     },
     onDrop: handleDrop,
     multiple: true,
   });
