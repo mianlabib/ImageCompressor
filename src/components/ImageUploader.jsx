@@ -4,8 +4,7 @@ import { FaDownload, FaTimes } from "react-icons/fa";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Footer from "./Footer";
 import imageCompression from "browser-image-compression";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast ,{ Toaster } from "react-hot-toast";
 
 const ImageUploader = () => {
   const [selectedImages, setSelectedImages] = useState([]);
@@ -17,7 +16,7 @@ const ImageUploader = () => {
 
   // Handle file drop and selection
   const handleDrop = async (acceptedFiles) => {
-    const validImageTypes = ["image/jpeg", "image/png", "image/gif", "image/svg+xml"];
+    const validImageTypes = ["image/jpeg", "image/png", "image/webp", "image/jpg"];
     const files = Array.isArray(acceptedFiles) ? acceptedFiles : [acceptedFiles];
 
     const newImages = files
@@ -47,23 +46,23 @@ const ImageUploader = () => {
       toast.error("Please upload some images to compress!");
       return;
     }
-
+  
     setLoading(true);
     const updatedImages = [...selectedImages];
-
+  
     try {
       for (let i = 0; i < updatedImages.length; i++) {
         const image = updatedImages[i];
-
+  
         const options = {
           maxSizeMB: 1, // Maximum size in MB
           maxWidthOrHeight: 800, // Max width or height in pixels
           useWebWorker: true,
         };
-
+  
         const compressedFile = await imageCompression(image.file, options);
         const compressedUrl = URL.createObjectURL(compressedFile);
-
+  
         updatedImages[i] = {
           ...updatedImages[i],
           compressedImageUrl: compressedUrl,
@@ -77,9 +76,12 @@ const ImageUploader = () => {
           },
         };
       }
-
+  
       setSelectedImages(updatedImages);
       setCompressionComplete(true);
+  
+      // Show success toast after compression is done
+      toast.success("Compression completed successfully!");
     } catch (error) {
       console.error("Error during image compression:", error);
       toast.error("An error occurred while compressing images.");
@@ -87,6 +89,7 @@ const ImageUploader = () => {
       setLoading(false);
     }
   };
+  
 
   // Remove image from selected list
   const removeImage = (index) => {
@@ -129,7 +132,7 @@ const ImageUploader = () => {
       <div className={`flex flex-col items-center w-full min-h-screen py-12 px-6 bg-gray-50 ${isSidebarOpen ? 'z-20' : 'z-10'}`}>
         <h2 className="text-3xl font-semibold text-gray-800 mb-4">Compress Your Images</h2>
         <p className="text-sm text-gray-500 mb-8 text-center">
-          Upload multiple images (JPG, PNG, SVG, GIF) to compress them with high quality and reduce their size.
+          Upload multiple images (JPG, PNG, WEBP, JPEG) to compress them with high quality and reduce their size.
         </p>
 
         {/* Image Upload */}
@@ -142,7 +145,7 @@ const ImageUploader = () => {
             <div className="flex flex-col items-center">
               <AiOutlineCloudDownload className="text-5xl text-gray-500 mb-4" />
               <span className="text-md text-gray-500">Drag & Drop or Click to Upload</span>
-              <span className="text-xs text-gray-400 mt-2">Supported formats: JPG, PNG, GIF, SVG</span>
+              <span className="text-xs text-gray-400 mt-2">Supported formats: JPG, PNG, JEPG, WEBP</span>
             </div>
           </div>
         )}
@@ -215,7 +218,7 @@ const ImageUploader = () => {
       </div>
 
       <Footer />
-      <ToastContainer />
+      <Toaster />
     </>
   );
 };

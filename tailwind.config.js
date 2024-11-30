@@ -1,9 +1,10 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",  // Add this line to target all your components
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 };
