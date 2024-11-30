@@ -94,10 +94,6 @@ Follow these steps to run the project locally:
 ![Upload and Compress](https://i.ibb.co/SvjFjTN/Screenshot-2024-11-30-121510.png)  
 
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## 🙌 Contributing
 
 We welcome contributions! If you'd like to contribute, please fork the repository and submit a pull request.
