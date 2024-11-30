@@ -63,11 +63,11 @@ Follow these steps to run the project locally:
 ```
 ├── src
 │   ├── components
-│   │   ├── Header.js         # Navigation header
-│   │   ├── ImageUploader.js  # Main image upload and compression logic
-│   │   ├── Footer.js         # Footer component
-│   ├── App.js                # Main application entry
-│   ├── index.js              # React DOM rendering
+│   │   ├── Header.jsx         # Navigation header
+│   │   ├── ImageUploader.jsx  # Main image upload and compression logic
+│   │   ├── Footer.jsx         # Footer component
+│   ├── App.jsx                # Main application entry
+│   ├── index.jsx              # React DOM rendering
 ├── public
 │   ├── index.html            # Main HTML file
 │   ├── favicon.ico           # App icon
