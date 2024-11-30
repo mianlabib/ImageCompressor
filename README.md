@@ -86,13 +86,13 @@ Follow these steps to run the project locally:
 
 ### Homepage
 
-![Homepage Preview](#)  
-(Replace `#` with the image link or add a screenshot to your repository.)
+![Homepage Preview](https://i.ibb.co/m98KpRT/theimagecompress.png)  
+
 
 ### Upload and Compress
 
-![Upload and Compress](#)  
-(Replace `#` with the image link or add a screenshot to your repository.)
+![Upload and Compress](https://i.ibb.co/SvjFjTN/Screenshot-2024-11-30-121510.png)  
+
 
 ## 📜 License
 
@@ -120,8 +120,4 @@ We welcome contributions! If you'd like to contribute, please fork the repositor
 
 ## 📧 Contact
 
-If you have any questions or feedback, feel free to reach out at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Feel free to customize this `README.md` file as needed for your project!
+If you have any questions or feedback, feel free to reach out at [mianlabib786@gmail.com](mailto:mianlabib786@gmail.com).
