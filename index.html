@@ -1,10 +1,77 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/public/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <!-- Meta Charset -->
+    <meta charset="utf-8" />
+
+    <!-- Favicon and Icon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Meta Tags for SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Compress images with our easy-to-use online tool. Reduce file sizes without compromising quality." />
+    <meta name="keywords" content="image compressor, online image resize, image compression, jpeg compressor, free image compressor, image optimization" />
+    <meta name="robots" content="index, follow" /> <!-- Directs search engines to index and follow the links -->
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:title" content="Image Compressor - Compress Your Images for Free" />
+    <meta property="og:description" content="Use our free image compressor to reduce file size without losing quality. Compress images quickly and easily." />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourTwitterHandle" />
+    <meta name="twitter:title" content="Image Compressor - Compress Your Images for Free" />
+    <meta name="twitter:description" content="Use our free image compressor to reduce file size without losing quality. Compress images quickly and easily." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta name="twitter:url" content="http://www.example.com/" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR-GA-ID');
+    </script>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Title Tag -->
+    <title>The Image Compressor - Compress Your Images for Free</title>
+
+    <!-- Additional Meta Tags for Enhanced SEO -->
+    <meta name="author" content="Your Company Name" />
+    <meta name="publisher" content="Your Company" />
+    <meta name="copyright" content="Your Company" />
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Social Media Image Meta -->
+    <meta property="og:image:alt" content="Image Compressor Logo" />
+    <meta name="twitter:image:alt" content="Image Compressor Logo" />
+
+    <!-- Mobile Web App Tags -->
+    <meta name="apple-mobile-web-app-title" content="Image Compressor" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Favicons for different sizes -->
+    <link rel="icon" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Facebook App ID for Social Plugins (if applicable) -->
+    <meta property="fb:app_id" content="YOUR_APP_ID" />
+
   </head>
   <body>
     <div id="root"></div>
