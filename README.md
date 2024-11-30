@@ -14,7 +14,7 @@ A simple and efficient image compression web application that allows users to up
 
 ## 🚀 Demo
 
-Check out the live demo [here](#). (Replace `#` with your hosted app URL.)
+Check out the live demo [here](https://theimagecompressor.vercel.app/).
 
 ## 📋 Installation
 
@@ -30,7 +30,7 @@ Follow these steps to run the project locally:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/your-username/image-compressor.git
-   cd image-compressor
+   cd ImageCompressor
    ```
 
 2. **Install Dependencies**
